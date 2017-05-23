@@ -86,12 +86,6 @@ function main() {
       --skip-if-exists \
       ${domain_flag} > "${root_dir}"/bbl_create_lbs.txt
 
-    bbl \
-      --debug \
-      update-lbs \
-      --cert=/tmp/bbl-cert \
-      --key=/tmp/bbl-key \
-      ${domain_flag} > "${root_dir}"/bbl_update_lbs.txt
   popd
 }
 
